@@ -15,11 +15,11 @@ class Resume
 			resume.input_projects
 			medias = options[:media]
 			medias.each do |media|
-        med = eval("#{media.capitalize}File").new
-        med.data(resume)
-        med.make
-      end
-		end
+        			med = eval("#{media.capitalize}File").new
+        			med.data(resume)
+        			med.make
+      			end
+		 end
 	end
 
 	def input_personal_info
@@ -92,8 +92,6 @@ class BuildData
 					@csv_data += key +" , " + value+"\n"
 					@result += key + " : "+ value+"\n"
 			}
-
-			result
 	end
 end
  
